@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:700);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.availability {
+  color: #ffffff;
+  margin-right: 1em;
+  position: absolute;
+  right: 100px;
+  top: 8px;
+  width: 200px;
+  -moz-transition: all, 300ms;
+  -o-transition: all, 300ms;
+  -webkit-transition: all, 300ms;
+  transition: all, 300ms;
+}
+
+.button {
+  border: 3px #ffffff solid;
+  bottom: 2px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  height: 44px;
+  overflow: hidden;
+  padding: 0.5em 1em 0.5em 0;
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 118px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-transition: all, 300ms;
+  -o-transition: all, 300ms;
+  -webkit-transition: all, 300ms;
+  transition: all, 300ms;
+}
+.button:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+  width: 290px;
+}
+.button:hover .availability {
+  color: #ffffff;
+  display: inline-block;
+}
+.button:active {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.hire-me {
+  position: absolute;
+  right: 24px;
+  top: 8px;
+}
