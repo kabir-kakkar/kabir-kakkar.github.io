@@ -6,7 +6,7 @@ This is a compilation of my work experience, samples and documents including my 
 To view my portfolio
 ==========
 
-Just click this link: https://kabir-kakkar.github.io/My_Portfolio/index.html
+Just click this link: https://kabir-kakkar.github.io/resume/
 
 Note
 ==========
