@@ -11,3 +11,5 @@ Just click this link: https://kabir-kakkar.github.io
 Note
 ==========
 Based on [this tutorial](https://medium.com/p/991845147ec).
+AND
+https://github.com/MuneneCalvin/Responsive-portfolio-website
