@@ -341,17 +341,11 @@ body {
     margin-left: 0.5rem;
     display: inline-block;
     vertical-align: middle;
-  }
+}
 
- /* .nav__brand {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-  }
-*/
-  .ri-code-s-slash-line {
+.ri-code-s-slash-line {
     font-size: 1.2rem;
-  }
+}
 
 /* About
 --------------------------------------------------------------*/
@@ -371,6 +365,13 @@ body {
   margin-bottom: 3rem;
 }
 
+/* Updated about wrapper */
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .skills {
   justify-self: center;
 }
@@ -381,10 +382,11 @@ body {
   margin-bottom: 3rem;
 }
 
+/* Updated skills wrapper */
 .skills__wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .skills__content {
@@ -667,6 +669,20 @@ body {
 /* Breakpoints
 --------------------------------------------------------------*/
 
+/* Mobile styles (portrait phones) */
+@media (max-width: 576px) {
+  .skills__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small tablets and large phones */
+@media (min-width: 577px) and (max-width: 768px) {
+  .skills__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Medium devices*/
 @media screen and (min-width: 560px) {
   .service__wrapper {
@@ -723,8 +739,26 @@ body {
   }
 }
 
-/* Large devices */
+/* Tablets and small desktops */
+@media (min-width: 769px) {
+  .about__wrapper {
+    flex-direction: row;
+  }
+  
+  .about__content {
+    flex: 1;
+  }
+  
+  .skills {
+    flex: 1;
+  }
+  
+  .skills__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+/* Large devices */
 @media screen and (min-width: 968px) {
   .about__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -758,5 +792,13 @@ body {
 
   .footer__wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Larger desktops */
+@media (min-width: 992px) {
+  .skills__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }

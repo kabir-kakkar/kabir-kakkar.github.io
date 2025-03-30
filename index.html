@@ -28,9 +28,60 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <style>
-  
-</style>
+/* Base styles */
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.skills__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Mobile styles (portrait phones) */
+@media (max-width: 576px) {
+    .skills__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small tablets and large phones */
+@media (min-width: 577px) and (max-width: 768px) {
+    .skills__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 769px) {
+    .about__wrapper {
+        flex-direction: row;
+    }
+    
+    .about__content {
+        flex: 1;
+    }
+    
+    .skills {
+        flex: 1;
+    }
+    
+    .skills__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Larger desktops */
+@media (min-width: 992px) {
+    .skills__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+</style>
 
 </head>
 
@@ -106,85 +157,85 @@
         </section>
 
         <!--=================== About ====================-->
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">About Me</h2>
-                    <span class="section__subtitle">Who am I</span>
-                </div>
-                <div class="d-grid about__wrapper">
-                    <div class="about__content">
-                        <h3 class="about__title">I'm a Data-Driven and Curious Software Engineer</h3>
-                        <p class="about__description">I build smart, efficient systems with a growing focus on data science. From crafting clean code to extracting insights from messy datasets, I love solving real-world problems with tech. Always learning, always building — and always up for a new challenge.
-                        </p>
-                        <a href="#project" class="btn btn--primary">Know More</a>
+<section id="about" class="section about">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Who am I</span>
+        </div>
+        <div class="about__wrapper">
+            <div class="about__content">
+                <h3 class="about__title">I'm a Data-Driven and Curious Software Engineer</h3>
+                <p class="about__description">I build smart, efficient systems with a growing focus on data science. From crafting clean code to extracting insights from messy datasets, I love solving real-world problems with tech. Always learning, always building — and always up for a new challenge.
+                </p>
+                <a href="#project" class="btn btn--primary">Know More</a>
+            </div>
+            <div class="skills">
+                <h3 class="skills__title">Technologies I've been working with:</h3>
+                <div class="skills__wrapper">
+                    <div class="skills__content">
+                        <h4 class="skills__subtitle">Data Science Libraries</h4>
+                        <ul class="skills__list">
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Pandas, Numpy</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Scikit-learn</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Mesa (Agent-Based Modeling)</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Matplotlib, seaborn</li>
+                        </ul>
                     </div>
-                    <div class="skills">
-                        <h3 class="skills__title">Technologies I've been working with:</h3>
-                        <div class="skills__wrapper">
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Data Science Libraries</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Pandas, Numpy</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Scikit-learn</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Mesa (Agent-Based Modeling)</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Matplotlib, seaborn</li>
-                                </ul>
-                            </div>
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Machine Learning</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Regression Analysis</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Time-Series Forecasting</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Model Evaluation & Optimization</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Feature Engineering</li>
-                                </ul>
-                            </div>
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Tools & Technologies</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Power BI</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Jupyter Notebook</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        MS Office Suite (Word, Excel, PowerPoint)</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Git/Github</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        AWS</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Docker</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Blockchain</li>
-                                </ul>
-                            </div>
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Programming Languages</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Python</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Java</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        C++</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        SQL</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="skills__content">
+                        <h4 class="skills__subtitle">Machine Learning</h4>
+                        <ul class="skills__list">
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Regression Analysis</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Time-Series Forecasting</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Model Evaluation & Optimization</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Feature Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="skills__content">
+                        <h4 class="skills__subtitle">Tools & Technologies</h4>
+                        <ul class="skills__list">
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Power BI</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Jupyter Notebook</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                MS Office Suite (Word, Excel, PowerPoint)</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Git/Github</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                AWS</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Docker</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Blockchain</li>
+                        </ul>
+                    </div>
+                    <div class="skills__content">
+                        <h4 class="skills__subtitle">Programming Languages</h4>
+                        <ul class="skills__list">
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Python</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                Java</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                C++</li>
+                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                SQL</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <!--=================== Qualification ====================-->
         <section id="qualification" class="section qualification">
