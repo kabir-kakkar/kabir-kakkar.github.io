@@ -27,62 +27,6 @@
     <!--=================== Main CSS ====================-->
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <style>
-/* Base styles */
-.about__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.skills__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-/* Mobile styles (portrait phones) */
-@media (max-width: 576px) {
-    .skills__wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Small tablets and large phones */
-@media (min-width: 577px) and (max-width: 768px) {
-    .skills__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Tablets and small desktops */
-@media (min-width: 769px) {
-    .about__wrapper {
-        flex-direction: row;
-    }
-    
-    .about__content {
-        flex: 1;
-    }
-    
-    .skills {
-        flex: 1;
-    }
-    
-    .skills__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Larger desktops */
-@media (min-width: 992px) {
-    .skills__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-</style>
-
 </head>
 
 <body>
@@ -514,7 +458,7 @@
                     <a href="tel:+14126061140" class="footer__contact">+1 (412) 606-1140</a>
                 </div>
             </div>
-            <p class="footer__copyright">&copy; <script>document.write(new Date().getFullYear())</script> Calvin Mwangi. All Rights Reserved</p>
+            
         </div>
     </footer>
 
