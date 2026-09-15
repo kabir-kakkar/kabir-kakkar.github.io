@@ -14,11 +14,10 @@ export const site = {
   photo: "/images/Kabir.jpg",
   form: {
     to: "kabir.kakkar.cmu@gmail.com",
-    subject: "Hiring inquiry — Kabir Kakkar",
+    subject: "Hiring inquiry - Kabir Kakkar",
   },
   about: {
     title: "Software engineer focused on systems that scale",
-    body: "I design and ship backend services, data pipelines, and LLM-powered products — from RAG recommendation engines to Kubernetes-backed deployments. Recently an SDE intern at MedSarthi building residency-matching infrastructure; previously a Software Engineer at Accenture improving throughput, CI/CD, and observability across production systems.",
   },
   skills: [
     {
@@ -73,14 +72,14 @@ export const site = {
     {
       school: "Carnegie Mellon University",
       degree: "Master of Information Systems Management",
-      dates: "August 2024 – December 2025",
+      dates: "August 2024 - December 2025",
       details:
         "Coursework: Distributed Systems, Database Management, Statistics, Agile, Machine Learning, Data Science for Product Managers, Artificial Intelligence (AI), Data Structures and Algorithms",
     },
     {
       school: "Manipal University Jaipur",
       degree: "Bachelor of Technology, Computer and Communication Engineering",
-      dates: "June 2017 – June 2021",
+      dates: "June 2017 - June 2021",
       details: null,
     },
   ],
@@ -88,7 +87,7 @@ export const site = {
     {
       company: "MedSarthi LLC",
       role: "Software Development Engineer, Internship",
-      dates: "July 2025 – August 2025",
+      dates: "July 2025 - August 2025",
       bullets: [
         "Built an LLM-powered residency matching platform that extracted applicant data from uploaded documents and generated personalized program recommendations with 95%+ extraction accuracy.",
         "Developed a hybrid RAG recommendation engine across 100+ residency programs using semantic retrieval, custom ranking, and grounded LLM reasoning, delivering recommendations in under 3 seconds.",
@@ -98,7 +97,7 @@ export const site = {
     {
       company: "Accenture",
       role: "Software Engineer",
-      dates: "May 2021 – May 2023",
+      dates: "May 2021 - May 2023",
       bullets: [
         "Developed backend services using asynchronous processing, caching, and database-query optimization, increasing request throughput by 35% and reducing p95 latency by 30% under peak load.",
         "Containerized backend services using Docker and deployed them on Kubernetes, improving deployment consistency across production environments.",
@@ -110,25 +109,28 @@ export const site = {
   ],
   projects: [
     {
+      title: "Movie Recommendation Platform",
+      description:
+        "Personalized movie recommendation system using collaborative filtering and content-based signals, with low-latency inference APIs and monitoring for production-ready serving.",
+      href: null as string | null,
+    },
+    {
       title: "Scalable Real-Time Recommendation Platform",
       description:
-        "Multi-stage recommendation system with collaborative filtering and real-time re-ranking — improving CTR by 18% and NDCG@10 by 22%. Low-latency inference APIs handling 5K+ requests/sec with automated retraining and Grafana monitoring.",
+        "Multi-stage recommendation system with collaborative filtering and real-time re-ranking, improving CTR by 18% and NDCG@10 by 22%. Low-latency inference APIs handling 5K+ requests/sec with automated retraining and Grafana monitoring.",
       href: null as string | null,
-      image: null as string | null,
     },
     {
       title: "Real-Time Anomaly Detection Pipeline for Financial Fraud",
       description:
         "Production-grade anomaly detection with Apache Kafka and PySpark Structured Streaming at 1k+ events/sec. Isolation Forest model with 92% recall and concept-drift monitoring that triggers Grafana alerts when distributions shift.",
       href: null as string | null,
-      image: null as string | null,
     },
     {
-      title: "Demand Forecasting — A Comparative Approach",
+      title: "Demand Forecasting - A Comparative Approach",
       description:
         "Co-authored published comparative study of demand forecasting models on real retail sales data. End-to-end forecasting pipeline with cloud deployment and Power BI dashboards for inventory decisions.",
       href: "https://www.researchgate.net/publication/348304287_Implementation_of_Demand_Forecasting_-_A_Comparative_Approach",
-      image: "/images/Demand.jpg",
     },
   ],
   nav: [

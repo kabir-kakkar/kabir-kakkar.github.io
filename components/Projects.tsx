@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { site } from "@/data/site";
 import { Reveal } from "@/components/Reveal";
 
@@ -18,7 +17,7 @@ export function Projects() {
         <ol className="mt-14 space-y-16">
           {site.projects.map((project, index) => (
             <Reveal key={project.title} delayMs={index * 80}>
-              <li className="grid items-start gap-8 border-t border-line pt-10 lg:grid-cols-[4rem_1fr_minmax(0,18rem)]">
+              <li className="grid items-start gap-6 border-t border-line pt-10 md:grid-cols-[4rem_1fr]">
                 <span className="font-display text-3xl font-bold text-accent/40">
                   {String(index + 1).padStart(2, "0")}
                 </span>
@@ -41,22 +40,6 @@ export function Projects() {
                     </a>
                   ) : null}
                 </div>
-                {project.image ? (
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm lg:mt-1">
-                    <Image
-                      src={project.image}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 18rem"
-                    />
-                  </div>
-                ) : (
-                  <div
-                    className="hidden aspect-[4/3] bg-gradient-to-br from-accent/15 to-ink/10 lg:block"
-                    aria-hidden
-                  />
-                )}
               </li>
             </Reveal>
           ))}

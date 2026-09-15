@@ -18,7 +18,7 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "Kabir Kakkar | Software Engineer",
   description:
-    "Portfolio of Kabir Kakkar — software engineer building backend systems, data platforms, and intelligent applications. CMU MISM.",
+    "Portfolio of Kabir Kakkar - software engineer building backend systems, data platforms, and intelligent applications. CMU MISM.",
   openGraph: {
     title: "Kabir Kakkar | Software Engineer",
     description:

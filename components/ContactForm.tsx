@@ -95,7 +95,7 @@ export function ContactForm() {
         role="status"
       >
         <p className="font-display text-2xl font-semibold text-ink">
-          Thanks — I’ll get back to you soon.
+          Thanks - I’ll get back to you soon.
         </p>
         <p className="mt-3 text-ink-muted">
           Your message was sent successfully.

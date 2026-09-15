@@ -12,9 +12,6 @@ export function About() {
           <h2 className="mt-3 max-w-2xl font-display text-3xl font-bold tracking-tight text-ink md:text-5xl">
             {site.about.title}
           </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted md:text-xl">
-            {site.about.body}
-          </p>
         </Reveal>
       </div>
     </section>
